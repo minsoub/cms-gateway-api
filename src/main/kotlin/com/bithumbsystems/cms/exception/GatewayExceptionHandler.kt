@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono
 class GatewayExceptionHandler : ErrorWebExceptionHandler {
     override fun handle(exchange: ServerWebExchange, ex: Throwable): Mono<Void> {
         val errorData: ErrorData
-        var errorCode = -1
+        val errorCode: Int
         val errorMessage: String
 
         if (ex.javaClass.name == GatewayException::javaClass.name) {
