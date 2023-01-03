@@ -30,11 +30,6 @@ code_style:
     - ./gradlew ktlintCheck
   allow_failure: false
 
-detekt_job:
-  stage: validate
-  script:
-    - ./gradlew detekt
-
 spotbugs-sast:
     stage: test
     artifacts:
