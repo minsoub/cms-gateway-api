@@ -18,7 +18,15 @@ class ApiRoute(
     fun apiRouteLocator(builder: RouteLocatorBuilder) = builder.routes {
         route(id = "cms-api-user") {
             path("/api/*/cms/**")
-            filters { apiFilters.apply(Config("CMS User ApiFilter apply", true, true)) }
+            filters {
+                apiFilters.apply(
+                    Config(
+                        "CMS User ApiFilter apply",
+                        preLogger = true,
+                        postLogger = true
+                    )
+                )
+            }
             uri(urlProperties.cmsUrl)
         }
     }

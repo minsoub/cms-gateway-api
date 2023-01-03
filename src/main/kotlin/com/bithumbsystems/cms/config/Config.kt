@@ -5,4 +5,3 @@ class Config(
     var preLogger: Boolean,
     var postLogger: Boolean
 )
-

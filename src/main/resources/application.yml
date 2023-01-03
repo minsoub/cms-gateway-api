@@ -32,7 +32,7 @@ spring:
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
 sites:
-  cms-url: http://k8s-systemsd-cmsappap-eca615f605-1526138129.ap-northeast-2.elb.amazonaws.com
+  cms-url: http://localhost:8080
 ---
 spring:
   config:

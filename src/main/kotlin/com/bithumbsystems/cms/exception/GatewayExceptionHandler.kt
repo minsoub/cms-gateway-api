@@ -28,8 +28,6 @@ class GatewayExceptionHandler : ErrorWebExceptionHandler {
 
         val buffer = exchange.response.bufferFactory().wrap(bytes)
 
-        // if (ex.javaClass.name == GatewayException)
-
         return exchange.response.writeWith(Flux.just(buffer))
     }
 }
