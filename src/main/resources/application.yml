@@ -41,7 +41,7 @@ spring:
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
 sites:
-  cms-url: http://k8s-systemsd-cmsappap-eca615f605-1526138129.ap-northeast-2.elb.amazonaws.com
+  cms-url: http://k8s-systemsd-cmsappap-131e60b01f-1896a7dfb216a6a0.elb.ap-northeast-2.amazonaws.com
 ---
 spring:
   config:
@@ -50,7 +50,16 @@ spring:
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
 sites:
-  cms-url: http://k8s-systemsd-cmsappap-eca615f605-1526138129.ap-northeast-2.elb.amazonaws.com
+  cms-url: http://k8s-systemsd-cmsappap-131e60b01f-1896a7dfb216a6a0.elb.ap-northeast-2.amazonaws.com
+---
+spring:
+  config:
+    activate:
+      on-profile: perform
+logging:
+  config: classpath:logback-spring-${spring.profiles.active}.xml
+sites:
+  cms-url: http://k8s-systemsd-cmsappap-131e60b01f-1896a7dfb216a6a0.elb.ap-northeast-2.amazonaws.com
 ---
 spring:
   config:
@@ -59,7 +68,7 @@ spring:
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
 sites:
-  cms-url: http://k8s-systemsd-cmsappap-eca615f605-1526138129.ap-northeast-2.elb.amazonaws.com
+  cms-url: http://k8s-systemsd-cmsappap-131e60b01f-1896a7dfb216a6a0.elb.ap-northeast-2.amazonaws.com
 ---
 spring:
   config:
@@ -68,4 +77,4 @@ spring:
 logging:
   config: classpath:logback-spring-${spring.profiles.active}.xml
 sites:
-  cms-url: http://k8s-systemsd-cmsappap-eca615f605-1526138129.ap-northeast-2.elb.amazonaws.com
+  cms-url: http://k8s-systemsd-cmsappap-131e60b01f-1896a7dfb216a6a0.elb.ap-northeast-2.amazonaws.com
