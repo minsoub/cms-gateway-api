@@ -36,7 +36,7 @@ dependencies {
 tasks {
     getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
         enabled = true
-        mainClass.set("com.bithumbsystems.cms.CmsGatewayApiApplication")
+        mainClass.set("com.bithumbsystems.cms.CmsGatewayApiApplicationKt")
     }
 
     jar {
